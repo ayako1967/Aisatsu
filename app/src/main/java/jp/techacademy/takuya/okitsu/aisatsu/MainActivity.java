@@ -69,6 +69,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                        MainActivity.this.hour = hourOfDay;
+                        MainActivity.this.minute = minute;
 
                         Log.d("UI-PARTS",String.valueOf(hourOfDay) + ":" + String.valueOf(minute));
                     }
